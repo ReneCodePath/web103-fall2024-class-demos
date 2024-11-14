@@ -8,6 +8,7 @@ const AllPosts = () => {
 
     useEffect(() => {
         (async () => {
+            // eslint-disable-next-line no-useless-catch
             try {
                 const data = await BlogPostsAPI.getAllPosts()
                 setPosts(data)

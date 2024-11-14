@@ -7,8 +7,6 @@ dotenv.config()
 const PORT = process.env.PORT || 3000
 const app = express()
 
-console.log(process.env.PGPORT);
-
 setup()
 
 app.use(express.json())
